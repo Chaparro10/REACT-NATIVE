@@ -5,6 +5,7 @@ import './App.css'
 import { BasicTypes } from './typescript/BasicTypes'
 import ObjectLiteral from './typescript/ObjectLiteral'
 import { BasicFunction } from './typescript/ BasicFunction'
+import { Counter } from './components/Counter'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <BasicTypes/>
     <ObjectLiteral/>
     <BasicFunction/>
+    <Counter/>
     </>
   )
 }
