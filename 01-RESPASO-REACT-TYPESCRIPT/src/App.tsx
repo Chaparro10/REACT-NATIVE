@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <h1>REACT + TYPESCRIPT</h1>
+    <h1 className='text-3xl font-bold underline'>REACT + TYPESCRIPT</h1>
     <BasicTypes/>
     <ObjectLiteral/>
     <BasicFunction/>
