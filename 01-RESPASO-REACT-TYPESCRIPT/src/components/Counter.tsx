@@ -3,7 +3,6 @@ import { useCounter } from "../hooks/useCounter";
 
 export const Counter = () => {
   const { count, rest1, sum1 } = useCounter();
-
   return (
     <div>
       <h1>Counter</h1>

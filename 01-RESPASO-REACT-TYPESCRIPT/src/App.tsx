@@ -8,6 +8,7 @@ import { BasicFunction } from './typescript/ BasicFunction'
 import { Counter } from './components/Counter'
 import { AuthProvider } from './context/AuthContex'
 import { LoginPage } from './components/LoginPage'
+import { UserPage } from './components/UserPage'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <BasicFunction/>
     <Counter/>
     <LoginPage/>
+    <UserPage/>
     </AuthProvider>
     </>
   )
