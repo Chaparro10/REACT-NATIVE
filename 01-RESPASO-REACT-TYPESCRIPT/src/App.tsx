@@ -9,6 +9,7 @@ import { Counter } from './components/Counter'
 import { AuthProvider } from './context/AuthContex'
 import { LoginPage } from './components/LoginPage'
 import { UserPage } from './components/UserPage'
+import { FormsPage } from './components/FormsPage'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <Counter/>
     <LoginPage/>
     <UserPage/>
+    <FormsPage/>
     </AuthProvider>
     </>
   )
