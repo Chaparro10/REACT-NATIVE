@@ -1,20 +1,18 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
+import CustomButton from '@/components/shared/CustomButton'
 
 const HomeScreen = () => {
     return (
         <View className='px-20 mt-20'>
             <Text>HOME</Text>
-            <Link className='mb-5' href='/products'>
-                ir a productos
-            </Link>
-            <Link className='mb-5' href='/profile'>
-                ir a perfilr
-            </Link>
-            <Link className='mb-5' href='/settings'>
-                ir a configuracion
-            </Link>
+            <CustomButton color='primary' onPress={()=>router.push('/products')}>Productos</CustomButton>
+          
+            <CustomButton color='primary' onPress={()=>router.push('/profile')}>Perfil</CustomButton>
+
+            <CustomButton color='primary' onPress={()=>router.push('/settings')}>Configuracion</CustomButton>
+
         </View>
     )
 }
