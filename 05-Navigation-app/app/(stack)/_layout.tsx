@@ -4,7 +4,16 @@ import { Stack } from 'expo-router'
 
 const StackLayout = () => {
     return (
-        <Stack >
+        <Stack
+        screenOptions={{
+            animation:'ios_from_left',
+           // headerShown:false
+           headerShadowVisible:false,
+           contentStyle:{
+            backgroundColor:'white'
+           }
+        }}
+         >
             <Stack.Screen name='home/index'
                 options={{
                     title: 'home screen',
@@ -18,7 +27,7 @@ const StackLayout = () => {
                     title: 'profile screen',
                 }} />
 
-<Stack.Screen name='settings/index'
+            <Stack.Screen name='settings/index'
                 options={{
                     title: 'settings screen',
                 }} />
